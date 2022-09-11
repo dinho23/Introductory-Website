@@ -1,0 +1,52 @@
+body {
+    background-image: linear-gradient(#00d0ff, #ed8907);
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: 100vh 100vh;
+    top: 0;
+    position: fixed;
+    color: white;
+}
+
+.profile-img {
+    border-radius: 50%;
+    height: 275px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 1rem;
+    object-fit: cover;
+    object-position: 0% 45%;
+}
+
+.presentation-card {
+    display: flex;
+    justify-content: center;
+}
+
+.inherit-bg {
+    background-color: inherit;
+    color: white
+}
+
+.icons {
+    width: 2rem;
+    height: 2rem;
+    object-position: 0% 20%;
+    filter: invert(1);
+}
+
+.navbar-color {
+    background-image: linear-gradient(90deg, #011175 50%, #ed8907);
+}
+
+@media (min-width: 991px) {
+    .right {
+        float: right;
+    }
+
+    .icons:hover {
+        filter: invert(0);
+        transition-duration: 0.5s;
+    }
+}
