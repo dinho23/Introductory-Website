@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-dark navbar-color navbar-expand-lg">
+  <nav class="navbar navbar-dark navbar-color navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-            </ul>
-            <div class="container-fluid">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">
-                <li class="nav-item">
-                  <a class="navbar-brand" href="https://www.linkedin.com/in/andrei-dinu23">
-                    <img class="icons" src="images/linkedin.png" alt="LinkedIn">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="navbar-brand" href="https://github.com/dinho23">
-                    <img class="icons" src="images/github.png" alt="GitHub">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </nav>
-
-    <div class="container-lg text-center">
-        <div class="row justify-content-md-center">
-          <div class="col my-3 presentation-card">
-            <div class="card inherit-bg" style="width: 18rem;">
-                <img src="images/pic.jpg" class="card-img-top profile-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">About me:</h5>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item inherit-bg"><b>Name:</b> Dinu Mihnea-Andrei</li>
-                  <li class="list-group-item inherit-bg"><b>Age:</b> 24</li>
-                  <li class="list-group-item inherit-bg"><b>Location:</b> Bucharest</li>
-                </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 my-3"></div>
-          <div class="col-lg-5 my-3">
-            <h1>Quick Description</h1>
-            <p>Hello, my name is Andrei, I am currently living in Bucharest were I have recently finished my studies at the <i><b>Faculty of Mathematics and Informatics </i></b> of the <i><b>University of Bucharest</i></b>.
-              I am looking forward to starting my career as a Sowftware Developer, as I had some previous experience in the field, which you can see in my resume and by checking my projects.
-            </p>
-          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">
+            <li class="nav-item">
+              <a class="navbar-brand" href="https://www.linkedin.com/in/andrei-dinu23">
+                <img class="icons" src="images/linkedin.png" alt="LinkedIn">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="https://github.com/dinho23">
+                <img class="icons" src="images/github.png" alt="GitHub">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+  </nav>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <div class="container-lg text-center container-fluid overflow-auto">
+    <div class="row justify-content-md-center">
+      <div class="col my-3 presentation-card">
+        <div class="card inherit-bg" style="width: 18rem;">
+          <img src="images/pic.jpg" class="card-img-top profile-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="overflow: hidden;">About me:</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item inherit-bg"><b>Name:</b> Dinu Mihnea-Andrei</li>
+            <li class="list-group-item inherit-bg"><b>Age:</b> 24</li>
+            <li class="list-group-item inherit-bg"><b>Location:</b> Bucharest</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 my-3"></div>
+      <div class="col-lg-5 my-3">
+        <h1 style="overflow: hidden;">Quick Description</h1>
+        <p>Hello, my name is Andrei, I am currently living in Bucharest were I have recently finished my studies at the
+          <i><b>Faculty of Mathematics and Informatics </i></b> of the <i><b>University of Bucharest</i></b>.
+          I am looking forward to starting my career as a Sowftware Developer, as I had some previous experience in the
+          field, which you can see in my resume and by checking my projects.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer py-3 navbar-color mt-auto">Created with <img class="icons" src="images/bootstrap.png"
+      alt="Bootstrap" style="filter: invert(0);">Bootstrap</footer>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

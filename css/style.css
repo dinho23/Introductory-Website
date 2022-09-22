@@ -8,6 +8,14 @@ body {
     position: fixed;
     color: white;
     font-size: large;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggler {
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .profile-img {
@@ -41,9 +49,18 @@ body {
     background-image: linear-gradient(90deg, #011175 50%, #ed8907);
 }
 
+.footer {
+    text-align: right;
+    padding-right: 1rem;
+}
+
 @media (min-width: 992px) {
     .right {
         float: right;
+    }
+
+    .navbar-nav {
+        overflow: initial;
     }
 
     .icons:hover {
@@ -52,6 +69,6 @@ body {
     }
 
     .nav-link {
-        width:max-content;
+        width: max-content;
     }
 }

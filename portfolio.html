@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <nav class="navbar navbar-dark navbar-color navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -45,7 +48,35 @@
     </div>
   </nav>
 
+  <div class="container-lg text-center">
+    <h4 class="overflow-hidden">Bellow you can check some of my project, or you can check my GitHub by pressing the icon
+      in the navbar:</h4>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <table class="table table-hover inherit-bg">
+      <thead>
+        <tr>
+          <th scope="col">Project</th>
+          <th scope="col">Quick Access</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Introductory Website</td>
+          <td>
+            <a href="https://github.com/dinho23/Introductory-Website">
+              <img class="icons" src="images/link.png" alt="link">
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+  <footer class="footer py-3 navbar-color mt-auto">Created with <img class="icons" src="images/bootstrap.png"
+      alt="Bootstrap" style="filter: invert(0);">Bootstrap</footer>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
