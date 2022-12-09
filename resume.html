@@ -50,35 +50,40 @@
 
   <div class="container-fluid text-center overflow-auto">
     <div class="row">
-      <div class="col-lg-2"></div>
+      <div class="col-lg-3"></div>
       <div class="col-lg-6">
-        <b>Education:</b>
+        <b class="title">Education:</b>
         <ul>
           <li>Faculty of Mathematics and Informatics - University of Bucharest (2022)</li>
           <li>Mathematics and Informatics, Informatics Intensive - Colegiul National "Ecaterina Teodoroiu" | Targu-Jiu
             (2017)</li>
         </ul>
-        <b>Work Experience:</b>
+        <b class="title">Work Experience:</b>
         <ul>
           <li>QA Game Tester - EA Bucharest (2018)</li>
         </ul>
-        <b style="margin-left: 2rem;">Spoken Languages:</b>
+        <b class="title">Spoken Languages:</b>
         <ul>
           <li>Romanian (Native)</li>
           <li>English (Advanced)</li>
           <li>French (Novice)</li>
         </ul>
-        <b style="margin-left: 2rem;">Skills:</b>
-        <table class="table table-hover inherit-bg">
+        <b class="title">Technical Skills:</b> 
+        <button onclick="toggleTableSkills()" class="tableButton" id="toggleButtonSkills">-</button>
+        <table class="table table-hover inherit-bg" id="tableSkills">
           <thead>
             <tr>
-              <th scope="col">Programming Language</th>
+              <th scope="col">Skill</th>
               <th scope="col">Level</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>C++</td>
+              <td>C/C++/C#</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Python</td>
               <td>Intermediate</td>
             </tr>
             <tr>
@@ -90,19 +95,81 @@
               <td>Intermediate</td>
             </tr>
             <tr>
-              <td>C</td>
+              <td>LUA (Love2D Engine)</td>
               <td>Intermediate</td>
             </tr>
             <tr>
-              <td>C#</td>
+              <td>Java</td>
               <td>Beginner</td>
             </tr>
             <tr>
-              <td>Python</td>
+              <td>Unity</td>
               <td>Beginner</td>
             </tr>
           </tbody>
         </table>
+
+        <br>
+
+        <b class="title">Certifications:</b> <button onclick="toggleTableCertifications()" class="tableButton" id="toggleButtonCertifications">-</button>
+        <table class="table table-hover inherit-bg"  id="tableCertifications">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Platform</th>
+              <th scope="col">Certificate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CS50's Introduction to Game Development</td>
+              <td>HarvardX</td>
+              <td>(ongoing)</td>
+            </tr>
+            <tr>
+              <td>Learn Ethical Hacking from Scratch</td>
+              <td>Udemy</td>
+              <td>(ongoing)</td>
+            </tr>
+            <tr>
+              <td>Python OOP - Object Oriented Programming for Beginners</td>
+              <td>Udemy</td>
+              <td>
+                <a href="https://www.udemy.com/certificate/UC-3e82badc-aeae-4112-b9ba-e5c89fa936e9/">
+                  <img class="icons" src="images/link.png" alt="link">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>JavaScript Algorithms and Data Structures</td>
+              <td>freeCodeCamp</td>
+              <td>
+                <a href="https://www.freecodecamp.org/certification/DinuAndrei/javascript-algorithms-and-data-structures">
+                  <img class="icons" src="images/link.png" alt="link">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Responsive Web Design</td>
+              <td>freeCodeCamp</td>
+              <td>
+                <a href="https://www.freecodecamp.org/certification/DinuAndrei/responsive-web-design">
+                  <img class="icons" src="images/link.png" alt="link">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Beginning C++ Programming - From Beginner to Beyond</td>
+              <td>Udemy</td>
+              <td>
+                <a href="https://www.udemy.com/certificate/UC-9a4fa838-e817-43eb-af7d-00124c6bda45/">
+                  <img class="icons" src="images/link.png" alt="link">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
       </div>
       <div class="col-lg-2"></div>
     </div>
@@ -113,4 +180,5 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
+<script src="toggleTables.js"></script>
 </html>

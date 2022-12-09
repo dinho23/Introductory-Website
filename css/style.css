@@ -13,6 +13,21 @@ body {
     flex-direction: column;
 }
 
+.title {
+    text-align: center;
+}
+
+.tableButton {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    line-height: 15px;
+}
+
 .navbar-toggler {
     margin-top: 4px;
     margin-bottom: 4px;
@@ -66,6 +81,12 @@ body {
     .icons:hover {
         filter: invert(0);
         transition-duration: 0.5s;
+    }
+
+    .tableButton:hover {
+        background-color:lightgray;
+        color: white;
+        transition-duration: 0.2s;
     }
 
     .nav-link {
