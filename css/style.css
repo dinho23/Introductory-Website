@@ -50,7 +50,7 @@ body {
 
 .inherit-bg {
     background-color: inherit;
-    color: white
+    color: white;
 }
 
 .icons {
@@ -67,6 +67,11 @@ body {
 .footer {
     text-align: right;
     padding-right: 1rem;
+}
+
+.table > :not(caption) > * > * {
+    color: white;
+    background-color: inherit;
 }
 
 @media (min-width: 992px) {
